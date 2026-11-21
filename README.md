@@ -9,6 +9,21 @@ Production-grade Cloudflare WAF custom ruleset and perimeter defence blueprint a
 
 Engineered and maintained by the cybersecurity engineering practice at **[TAVARDT UK](https://ag.tavardt.com/uk/cybersecurity/)**.
 
+> [!IMPORTANT]
+> **Universal & Stack-Agnostic Architecture:** This repository is **not restricted to WordPress**. It is engineered to protect **RESTful APIs, microservices, modern frontends (Next.js, React), and enterprise backend infrastructure (Node.js, Python, Go, PHP, Java)**. The suppression of legacy CMS probes functions as an **active edge hygiene layer**, dropping indiscriminate botnet traffic across Cloudflare's edge network (< 1ms) before it reaches your origin infrastructure.
+
+---
+
+### Multi-Stack Defence Matrix
+
+| Defence Layer | Mitigated Vectors | Protected Stacks & Workloads |
+| :--- | :--- | :--- |
+| **Asset & Secret Isolation** | Block access to `.env`, `.git`, `.sql`, `package.json`, `composer.json` | **APIs, Next.js, Node.js, Python, Go, Laravel, React** |
+| **Threat Scanner Suppression** | Edge block for Nikto, SQLMap, Acunetix, Masscan, Gobuster, Nmap | **Public web platforms, microservices, and APIs** |
+| **HTTP Verb Sanitisation** | Immediate rejection of unwanted verbs (`TRACE`, `TRACK`, `DEBUG`) | **REST APIs and microservice architecture** |
+| **Privileged Route Gating** | Frictionless challenge on sensitive entrypoints (`/admin`, `/login`) | **Corporate administration consoles and web ERPs** |
+| **Zero-Noise Edge Hygiene** | Edge drop for blind probes targeting `/xmlrpc.php` and trackbacks | **Total prevention of origin compute and bandwidth drain** |
+
 ---
 
 ## 1. Perimeter Defence Architecture
