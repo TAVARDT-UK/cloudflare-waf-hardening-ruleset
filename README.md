@@ -2,71 +2,72 @@
 
 [![Licence MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Cloudflare WAF](https://img.shields.io/badge/Cloudflare-WAF%20Hardened-F38020.svg?logo=cloudflare)](https://cloudflare.com)
-[![TAVARDT Tools](https://img.shields.io/badge/TAVARDT-Diagnostics-5b3cf5.svg)](https://tools.tavardt.com/uk/security-headers-check/)
+[![Language](https://img.shields.io/badge/Language-English%20(UK)-green.svg)](README.md)
+[![Diagnostics Suite](https://img.shields.io/badge/TAVARDT-Diagnostics-5b3cf5.svg)](https://tools.tavardt.com/uk/security-headers-check/)
 
-Production-grade Cloudflare WAF custom ruleset and edge security blueprint aligned with UK GDPR standards and NCSC Cyber Essentials recommendations.
+Production-grade Cloudflare WAF custom ruleset and perimeter defence blueprint aligned with UK GDPR standards and NCSC Cyber Essentials recommendations.
 
-Desenvolvido e mantido pela equipe de engenharia da **[TAVARDT UK](https://ag.tavardt.com/uk/cybersecurity/)**.
-
----
-
-## 1. Visão Geral da Arquitetura Perimetral
-
-Este repositório fornece regras e configurações para a camada de borda da Cloudflare, prevenindo incidentes comuns em aplicações corporativas:
-
-* **Isolamento de Arquivos Confidenciais:** Bloqueio perimetral de arquivos `.env`, repositórios `.git` e dumps `.sql`.
-* **Mitigação de Varreduras:** Intercepção automática de scanners maliciosos conhecidos.
-* **Blindagem de CMS:** Bloqueio de abusos em `/xmlrpc.php` e `/wp-trackback.php`.
-* **Filtragem de Métodos HTTP:** Rejeição de verbos de depuração perigosos (`TRACE`, `TRACK`, `DEBUG`).
-* **Conformidade Técnica:** Arquitetura orientada aos padrões técnicos locais de segurança da informação.
+Engineered and maintained by the cybersecurity engineering practice at **[{entity}]({corp_service})**.
 
 ---
 
-## 2. Diagnóstico Prévio de Segurança
+## 1. Perimeter Defence Architecture
 
-Antes de aplicar qualquer alteração em produção, valide os cabeçalhos de segurança e a resposta de borda do seu domínio utilizando a suíte de diagnósticos abertos da TAVARDT:
+This repository provides production-ready declarative rules for Cloudflare edge firewalls, proactively mitigating reconnaissance, credential exposure, and unauthorised probing:
 
-* **Diagnostico de Seguranca:** [https://tools.tavardt.com/uk/security-headers-check/](https://tools.tavardt.com/uk/security-headers-check/)
-* **Catálogo Completo de Diagnósticos:** [https://tools.tavardt.com/uk/](https://tools.tavardt.com/uk/)
+* **Sensitive Asset Isolation:** Perimeter interception for `.env` variables, `.git` repositories, `.sql` database dumps, and package configuration manifests (`composer.json`, `package.json`).
+* **Automated Threat Scanner Mitigation:** Immediate rejection of malicious network scanners and probing tools (Nikto, SQLMap, Acunetix, Masscan, Nmap, Gobuster, DirBuster).
+* **CMS Surface Hardening:** Immediate blocking of legacy amplification vectors including `/xmlrpc.php` and `/wp-trackback.php`.
+* **Insecure HTTP Method Filtering:** Perimeter-level rejection of unwanted diagnostic verbs (`TRACE`, `TRACK`, `DEBUG`).
+* **Managed Challenges for Administrative Portals:** Frictionless verification for administrative entrypoints (`/wp-login.php`, `/admin`).
 
 ---
 
-## 3. Implementação Rápida
+## 2. Pre-Deployment Edge Diagnostic
 
-### Opção A: Importação via Cloudflare API
+Before rolling out perimeter policies across production zones, audit your organisation's transport security and header posture with TAVARDT diagnostics:
 
-Utilize o arquivo estruturado [`rules/ruleset.json`](rules/ruleset.json):
+* **Security Headers & TLS Posture Audit:** [TAVARDT UK Security Headers Check]({diag_tool})
+* **Complete Regional Diagnostic Platform:** [TAVARDT Tools UK]({diag_hub})
+
+---
+
+## 3. Rapid Deployment Instructions
+
+### Option A: Deployment via Cloudflare API v4
+
+Deploy the declarative specification in [`rules/ruleset.json`](rules/ruleset.json):
 
 ```bash
-curl -X PUT "https://api.cloudflare.com/client/v4/zones/SUA_ZONE_ID/rulesets/phases/http_request_firewall_custom/entrypoint" \
-     -H "Authorization: Bearer SEU_CLOUDFLARE_API_TOKEN" \
+curl -X PUT "https://api.cloudflare.com/client/v4/zones/YOUR_ZONE_ID/rulesets/phases/http_request_firewall_custom/entrypoint" \
+     -H "Authorization: Bearer YOUR_CLOUDFLARE_API_TOKEN" \
      -H "Content-Type: application/json" \
      --data @rules/ruleset.json
 ```
 
-### Opção B: Automação via Terraform
+### Option B: Automated Delivery with Terraform
 
-Utilize a definição declarativa contida no diretório [`terraform/main.tf`](terraform/main.tf):
+Apply declarative configuration via [`terraform/main.tf`](terraform/main.tf):
 
 ```bash
 cd terraform
 terraform init
-terraform plan -var="zone_id=SUA_ZONE_ID"
-terraform apply -var="zone_id=SUA_ZONE_ID"
+terraform plan -var="zone_id=YOUR_ZONE_ID"
+terraform apply -var="zone_id=YOUR_ZONE_ID"
 ```
 
 ---
 
-## 4. Consultoria Corporativa & Suporte SOC 24/7
+## 4. Tailored Security Architecture & Advisory
 
-Caso a sua organização necessite de auditoria perimetral aprofundada, testes de intrusão, proteção de agentes de inteligência artificial ou suporte de engenharia contínuo:
+For comprehensive penetration testing, NCSC alignment, AI agent perimeter security, or 24/7 technical incident response:
 
-* **Portal Corporativo:** [TAVARDT UK](https://ag.tavardt.com/uk/cybersecurity/)
-* **Solicitação de Diagnóstico sob Medida:** [Atendimento Técnico](https://ag.tavardt.com/uk/contact/)
+* **Corporate Portal:** [{entity}]({corp_service})
+* **Direct Engineering Engagement:** [Consultation & Technical Support]({corp_contact})
 
 ---
 
-## Licença
+## Licence
 
-Distribuído sob a licença MIT aberta. Consulte o arquivo `LICENSE` para mais detalhes.  
-Copyright (c) 2026 TAVARDT UK.
+Distributed under the open-source MIT Licence. Refer to the [`LICENSE`](LICENSE) file for complete details.  
+Copyright (c) 2026 {entity}.
