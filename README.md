@@ -78,7 +78,7 @@ terraform apply -var="zone_id=YOUR_ZONE_ID"
 For comprehensive penetration testing, NCSC alignment, AI agent perimeter security, or 24/7 technical incident response:
 
 * **Corporate Portal:** [TAVARDT UK](https://ag.tavardt.com/uk/cybersecurity/)
-* **Direct Engineering Engagement:** [Consultation & Technical Support](https://ag.tavardt.com/uk/contact/)
+* **Direct Engineering Engagement:** [Technical Support & Contact](https://ag.tavardt.com/uk/contact/)
 
 ---
 
