@@ -83,12 +83,11 @@ For comprehensive penetration testing, NCSC alignment, AI agent perimeter securi
 
 ***
 
-## Governance and Sovereignty
+## Useful Links
 
-* **Sovereign Unit**: **TAVARDT United Kingdom** (`TAVARDT-UK`)
-* **Core Standards**: [00-core Governance](https://github.com/TAVARDT-UK/00-core)
-* **Diagnostic Portal**: **TAVARDT UK Diagnostic Suite**
-* **Enterprise Security**: [TAVARDT UK Cybersecurity](https://ag.tavardt.com/uk/cybersecurity/)
+* **Corporate Portal:** https://ag.tavardt.com/uk/
+* **Diagnostic Suite:** https://tools.tavardt.com/uk/
+* **Technical Contact:** https://ag.tavardt.com/uk/contact/
 
 ***
 
