@@ -7,7 +7,7 @@
 
 Production-grade Cloudflare WAF custom ruleset and perimeter defence blueprint aligned with UK GDPR standards and NCSC Cyber Essentials recommendations.
 
-Engineered and maintained by the cybersecurity engineering practice at **TAVARDT UK**.
+Engineered and maintained by the cybersecurity engineering practice at **TAVARDT**.
 
 > [!IMPORTANT]
 > **Universal & Stack-Agnostic Architecture:** This repository is **not restricted to WordPress**. It is engineered to protect **RESTful APIs, microservices, modern frontends (Next.js, React), and enterprise backend infrastructure (Node.js, Python, Go, PHP, Java)**. The suppression of legacy CMS probes functions as an **active edge hygiene layer**, dropping indiscriminate botnet traffic across Cloudflare's edge network (< 1ms) before it reaches your origin infrastructure.
@@ -42,7 +42,7 @@ This repository provides production-ready declarative rules for Cloudflare edge 
 
 Before rolling out perimeter policies across production zones, audit your organisation's transport security and header posture with TAVARDT diagnostics:
 
-* **Security Headers & TLS Posture Audit:** **TAVARDT UK Security Headers Check**
+* **Security Headers & TLS Posture Audit:** **TAVARDT Security Headers Check**
 * **Complete Regional Diagnostic Platform:** **TAVARDT Tools UK**
 
 ***
@@ -77,7 +77,7 @@ terraform apply -var="zone_id=YOUR_ZONE_ID"
 
 For comprehensive penetration testing, NCSC alignment, AI agent perimeter security, or 24/7 technical incident response:
 
-* **Corporate Portal:** **TAVARDT UK**
+* **Corporate Portal:** **TAVARDT**
 * **Direct Engineering Engagement:** [Technical Support & Contact](https://ag.tavardt.com/uk/contact/)
 
 ***
@@ -85,4 +85,8 @@ For comprehensive penetration testing, NCSC alignment, AI agent perimeter securi
 ## Licence
 
 Distributed under the open-source MIT Licence. Refer to the [`LICENSE`](LICENSE) file for complete details.  
-Copyright (c) 2026 TAVARDT.
+Copyright
+
+***
+
+© 2026 TAVARDT. All rights reserved.
