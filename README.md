@@ -4,6 +4,7 @@
 [![Cloudflare WAF](https://img.shields.io/badge/Cloudflare-WAF%20Hardened-F38020.svg?logo=cloudflare)](https://cloudflare.com)
 [![Language](https://img.shields.io/badge/Language-English%20(UK)-green.svg)](README.md)
 [![Diagnostics Suite](https://img.shields.io/badge/TAVARDT-Diagnostics-5b3cf5.svg)](https://tools.tavardt.com/uk/security-headers-check/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Production-grade Cloudflare WAF custom ruleset and perimeter defence blueprint aligned with UK GDPR standards and NCSC Cyber Essentials recommendations.
 
@@ -79,6 +80,15 @@ For comprehensive penetration testing, NCSC alignment, AI agent perimeter securi
 
 * **Corporate Portal:** **TAVARDT**
 * **Direct Engineering Engagement:** [Technical Support & Contact](https://ag.tavardt.com/uk/contact/)
+
+***
+
+## Governance and Sovereignty
+
+* **Sovereign Unit**: **TAVARDT United Kingdom** (`TAVARDT-UK`)
+* **Core Standards**: [00-core Governance](https://github.com/TAVARDT-UK/00-core)
+* **Diagnostic Portal**: **TAVARDT UK Diagnostic Suite**
+* **Enterprise Security**: [TAVARDT UK Cybersecurity](https://ag.tavardt.com/uk/cybersecurity/)
 
 ***
 
