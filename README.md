@@ -1,4 +1,4 @@
-# Cloudflare WAF Hardening Ruleset & Edge Security Blueprint | TAVARDT UK
+# Cloudflare WAF Hardening Ruleset & Edge Security Blueprint
 
 [![Licence MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Cloudflare WAF](https://img.shields.io/badge/Cloudflare-WAF%20Hardened-F38020.svg?logo=cloudflare)](https://cloudflare.com)
@@ -85,4 +85,4 @@ For comprehensive penetration testing, NCSC alignment, AI agent perimeter securi
 ## Licence
 
 Distributed under the open-source MIT Licence. Refer to the [`LICENSE`](LICENSE) file for complete details.  
-Copyright (c) 2026 TAVARDT UK.
+Copyright (c) 2026 TAVARDT.
