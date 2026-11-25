@@ -1,14 +1,11 @@
 # Cloudflare WAF Hardening Ruleset & Edge Security Blueprint
 
-[![Licence MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Cloudflare WAF](https://img.shields.io/badge/Cloudflare-WAF%20Hardened-F38020.svg?logo=cloudflare)](https://cloudflare.com)
-[![Language](https://img.shields.io/badge/Language-English%20(UK)-green.svg)](README.md)
 [![Diagnostics Suite](https://img.shields.io/badge/TAVARDT-Diagnostics-5b3cf5.svg)](https://tools.tavardt.com/uk/security-headers-check/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Production-grade Cloudflare WAF custom ruleset and perimeter defence blueprint aligned with UK GDPR standards and NCSC Cyber Essentials recommendations.
 
-Engineered and maintained by the cybersecurity engineering practice at **TAVARDT**.
 
 > [!IMPORTANT]
 > **Universal & Stack-Agnostic Architecture:** This repository is **not restricted to WordPress**. It is engineered to protect **RESTful APIs, microservices, modern frontends (Next.js, React), and enterprise backend infrastructure (Node.js, Python, Go, PHP, Java)**. The suppression of legacy CMS probes functions as an **active edge hygiene layer**, dropping indiscriminate botnet traffic across Cloudflare's edge network (< 1ms) before it reaches your origin infrastructure.
@@ -74,16 +71,7 @@ terraform apply -var="zone_id=YOUR_ZONE_ID"
 
 ***
 
-## 4. Tailored Security Architecture & Advisory
-
-For comprehensive penetration testing, NCSC alignment, AI agent perimeter security, or 24/7 technical incident response:
-
-* **Corporate Portal:** **TAVARDT**
-* **Direct Engineering Engagement:** [Technical Support & Contact](https://ag.tavardt.com/uk/contact/)
-
-***
-
-## Useful Links
+## 4. Useful Links
 
 * **Corporate Portal:** https://ag.tavardt.com/uk/
 * **Diagnostic Suite:** https://tools.tavardt.com/uk/
@@ -93,7 +81,7 @@ For comprehensive penetration testing, NCSC alignment, AI agent perimeter securi
 
 ### Licence
 
-Distributed under the open-source MIT Licence. Refer to the [`LICENSE`](LICENSE) file for complete details.
+Distributed under the open-source MIT Licence.
 
 ***
 
