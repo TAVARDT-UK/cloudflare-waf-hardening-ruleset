@@ -91,10 +91,9 @@ For comprehensive penetration testing, NCSC alignment, AI agent perimeter securi
 
 ***
 
-## Licence
+### Licence
 
-Distributed under the open-source MIT Licence. Refer to the [`LICENSE`](LICENSE) file for complete details.  
-Copyright
+Distributed under the open-source MIT Licence. Refer to the [`LICENSE`](LICENSE) file for complete details.
 
 ***
 
